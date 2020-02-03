@@ -88,7 +88,7 @@ def movies_with_directors_set(source)
   # to have a :director_name key added to it.
   new_arr = []
   source.each do |director|
-    new_arr < movies_with_director_key(director[:name], director[:movies])
+    new_arr << movies_with_director_key(director[:name], director[:movies])
   end
   flatten_a_o_a(new_arr)
 end
