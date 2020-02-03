@@ -90,7 +90,7 @@ def movies_with_directors_set(source)
   source.each do |director|
     new_arr << movies_with_director_key(director[:name], director[:movies])
   end
-  flatten_a_o_a(new_arr)
+  new_arr
 end
 
 # ----------------    End of Your Code Region --------------------
