@@ -52,7 +52,7 @@ def movies_with_director_key(name, movies_collection)
   
   arr = []
   movies_collection.each do |movie|
-    arr << {:director_name = name; :name = movie}
+    arr << {:director_name => name; :name => movie}
   end
 end
 
